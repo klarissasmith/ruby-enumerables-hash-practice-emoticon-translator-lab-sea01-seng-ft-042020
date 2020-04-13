@@ -20,11 +20,11 @@ def get_japanese_emoticon(file_path, emoticon)
   my_hash.reduce({}) do |memo, (key, value)|
     if value[1] == 
     memo
-    
   end
+  "Sorry, the emoticon was not found"
 end
 
-
+def get_english_meaning()
 
 
 
