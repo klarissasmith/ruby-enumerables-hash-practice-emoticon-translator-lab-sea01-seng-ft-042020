@@ -16,13 +16,13 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
   my_hash = load_library(file_path)
-  
-  my_hash.reduce({}) do |memo, (key, value)|
-    if value[1] == 
-    memo
+  emoticon = my_hash.keys.find do |key|
+    my_hash[key][:english] == emoticon
   end
-  "Sorry, the emoticon was not found"
+  emoticon ? library[emoticon][:japanese]:
+  "Sorry, that emoticon was not found"
 end
+  
 
 def get_english_meaning()
 end
